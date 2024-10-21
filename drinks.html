@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drinks Tary</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="drinks.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+
+        <div class="nav-container">
+
+            <a href="#menu" class="logo">
+                <img src="images/tary logo.png" class="logo-img" style="height: 120px; width: 80px;">
+            </a>
+            <div class="nav-bar">
+                <a href="index.html " class="nav-link">БІЗ ТУРАЛЫ</a>
+                <a href="index.html#menu" class="nav-link">ТАПСЫРЫС БЕРУ</a>
+                <a href="index.html#filial" class="nav-link">ФИЛИАЛДАР</a>
+                <a href="index.html#masterclasses-container" class="nav-link">ҰСЫНЫСТАРЫМЫЗ</a>
+                <a href="index.html#book" class="nav-link">БАЙЛАНЫС</a>
+            </div>
+            <!-- nav-icons -->
+            <div class="nav-icons">
+                <a href="#"><i class='bx bx-user'></i></a>
+                <a href="cart.html"><i class='bx bxs-shopping-bag' ></i></a>
+
+                <!-- menu-icons -->
+                <div class="menu-icon">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                  </div>
+                <!-- a href=<box-icon name='user'></box-icon> -->
+            </div>
+        </div>
+    </header>
+    <section id="menu" class="menu-section">
+        <h1>ТАРЫдан  Гастротур </h1>
+        <div class="menu-container" id="menu-container">
+            <div class="menu-categories">
+                <button onclick="filterMenu('juices')">ШЫРЫНДАР</button>
+                <button onclick="filterMenu('coffees')">КОФЕЛЕР</button>
+                <button onclick="filterMenu('teas')">ШӘЙЛАР</button>
+                <button onclick="filterMenu('kokteil')">КОКТЕЙЛДЕР</button>
+            </div>
+
+
+            <!-- juices -->
+            <div class="menu-items">
+                <div class="menu-item juices">
+                    <img src="images/juices/ananas-qymyz.jpeg" alt="Item 1">
+                    <h3>Ананас-қымыздық лимонады</h3>
+                    <p>Құны: 2590 ₸</p>
+                    <button onclick="addToBag('Ананас-қымыздық лимонады', 2590)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item juices">
+                    <img src="images/juices/apelsin-kivi.jpeg" alt="Item 2">
+                    <h3>Апельсин-киви лимонады</h3>
+                    <p>Құны: 2590 ₸</p>
+                    <button onclick="addToBag('Апельсин-киви лимонады', 2590)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item juices">
+                    <img src="images/juices/mukjidek.jpeg" alt="Item 3">
+                    <h3>Мүкжидек</h3>
+                    <p>Құны: 1790 ₸</p>
+                    <button onclick="addToBag('Мүкжидек',  1790)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item juices">
+                    <img src="images/juices/ice-tea-jidek.jpeg" alt="Item 4">
+                    <h3>Ice tea "Жидек"</h3>
+                    <p>Құны: 1490 ₸</p>
+                    <button onclick="addToBag('ice tea `Жидек`',1490 )"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item juices">
+                    <img src="images/juices/tuimedaq-ananas.jpeg" alt="Item 5">
+                    <h3>Ice tea "Түймедақ-ананас"</h3>
+                    <p>Құны: 1990 ₸</p>
+                    <button onclick="addToBag('Ice tea `Түймедақ-ананас`', 1990)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+            </div>    
+    <!--coffee  -->
+            <div class="menu-items">
+                <div class="menu-item coffees">
+                    <img src="images/coffee/espresso.jpeg" alt="Item 1">
+                    <h3>Espresso</h3>
+                    <p>Құны: 990 ₸</p>
+                    <button onclick="addToBag('Espresso', 990)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item coffees">
+                    <img src="images/coffee/americano.jpeg" alt="Item 2">
+                    <h3>Americano</h3>
+                    <p>Құны: 1290 ₸</p>
+                    <button onclick="addToBag('Americano', 1290)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item coffees">
+                    <img src="images/coffee/latte.jpeg" alt="Item 3">
+                    <h3>Latte</h3>
+                    <p>Құны: 1590 ₸</p>
+                    <button onclick="addToBag('Latte',  1590)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item coffees">
+                    <img src="images/coffee/cappucino.jpeg" alt="Item 4">
+                    <h3>Cappucino</h3>
+                    <p>Құны: 1590 ₸</p>
+                    <button onclick="addToBag('Cappucino', 1590)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item coffees">
+                    <img src="images/coffee/ice-coffee.jpeg" alt="Item 5">
+                    <h3>Ice Coffee</h3>
+                    <p>Құны: 1590 ₸</p>
+                    <button onclick="addToBag('Ice Coffee', 1590)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item coffees">
+                    <img src="images/coffee/balmuzdaq-sokolad.jpeg" alt="Item 6">
+                    <h3>Балмұздақ қосылған ыстық шоколад</h3>
+                    <p>Құны: 2590 ₸</p>
+                    <button onclick="addToBag('Балмұздақ қосылған ыстық шоколад',  2590)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item coffees">
+                    <img src="images/coffee/espresso-irimsik.jpeg" alt="Item 7">
+                    <h3>Espresso "Ірімшік"</h3>
+                    <p>Құны: 1590 ₸</p>
+                    <button onclick="addToBag('Espresso `Ірімшік`',1590 )"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item coffee">
+                    <img src="images/coffee/tary-cappucino.jpeg" alt="Item 8">
+                    <h3>Tary Cappucino</h3>
+                    <p>Құны: 1990 ₸</p>
+                    <button onclick="addToBag('Tary Cappucino', 1990)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+            </div>
+     <!--teas -->
+            <div class="menu-items">
+                <div class="menu-item teas">
+                    <img src="images/tea/tary.jpeg" alt="Item 1">
+                    <h3>"Тары"</h3>
+                    <p>қара шай, сүт,тары</p>
+                    <p>Құны: 2190 ₸</p>
+                    <button onclick="addToBag('Тары', 2190)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item teas">
+                    <img src="images/tea/jidek.jpeg" alt="Item 2">
+                    <h3>"Жидек"</h3>
+                    <p>қара шай,жидектер,лимон,жалбыз</p>
+                    <p>Құны: 1990 ₸</p>
+                    <button onclick="addToBag('Жидек', 1990)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item teas">
+                    <img src="images/tea/arsa.jpeg" alt="Item 3">
+                    <h3>Аршаға ысталған</h3>
+                    <p>шырша жинағы, көк шай,алма шырыны,ананас</p>
+                    <p>Құны: 1990 ₸</p>
+                    <button onclick="addToBag('Аршаға ысталған',  1990)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item teas">
+                    <img src="images/tea/zimbir.jpeg" alt="Item 4">
+                    <h3>"Зімбір"</h3>
+                    <p>қара шай , жебіршөп, даршын, кардамон,қалампыр,науат</p>
+                    <p>Құны: 1990 ₸</p>
+                    <button onclick="addToBag('Зімбір',  1990)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item teas">
+                    <img src="images/tea/kiikoty.jpeg" alt="Item 5">
+                    <h3>"Киікоты"</h3>
+                    <p>көк шай, жаңа сығылған алма, науат,алма</p>
+                    <p>Құны: 1790 ₸</p>
+                    <button onclick="addToBag('Киікоты',  1790)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item teas">
+                    <img src="images/tea/kokjiek.jpeg" alt="Item 6">
+                    <h3>"Көкжиек" </h3>
+                    <p>қара шай, жаңа сығылған алма, апелсин,науат </p>
+                    <p>Құны: 1790 ₸</p>
+                    <button onclick="addToBag('Көкжиек', 1790)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item teas">
+                    <img src="images/tea/jalbyz.jpeg" alt="Item 7">
+                    <h3>"Жалбыз"</h3>
+                    <p>көк шай,киви,лимон,жалбыз</p>
+                    <p>Құны: 1990 ₸</p>
+                    <button onclick="addToBag('Жалбыз', 1990)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item teas">
+                    <img src="images/tea/sargaldaq.jpeg" alt="Item 8">
+                    <h3>"Сарғалдақ" </h3>
+                    <p>көк шай,қара шай,киікоты,жебіршөп, гүлкекіре,жалбыз, шабдалы, науат,жаңа сығылған алма</p>
+                    <p>Құны: 1990 ₸</p>
+                    <button onclick="addToBag('Сарғалдақ ',  1990)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item teas">
+                    <img src="images/tea/zimbir.jpeg" alt="Item 9">
+                    <h3>"Тау"</h3>
+                    <p>тау шөптері, жалбыз, лимон,бал</p>
+                    <p>Құны: 1990 ₸</p>
+                    <button onclick="addToBag('Тау',  1990)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item teas">
+                    <img src="images/tea/kiikoty.jpeg" alt="Item 10">
+                    <h3>"Классикалық"</h3>
+                    <p>қара,көк шай</p>
+                    <p>Құны: 1790 ₸</p>
+                    <button onclick="addToBag('Классикалық',  1790)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+            </div>
+        <!-- kokteil-->
+            <div class="menu-items">
+                <div class="menu-item kokteil">
+                    <img src="images/kokteil/orman-jangagy.jpeg" alt="Item 1">
+                    <h3>Орман жаңғағы коктейлі</h3>
+                    <p>Құны: 2590 ₸</p>
+                    <button onclick="addToBag('Орман жаңғағы коктейлі', 2590)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item kokteil">
+                    <img src="images/kokteil/nazik-kokos.jpeg" alt="Item 2">
+                    <h3>Нәзік кокос коктейлі</h3>
+                    <p>Құны: 2590 ₸</p>
+                    <button onclick="addToBag('Нәзік кокос коктейлі', 2590)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item kokteil">
+                    <img src="images/kokteil/pispenan.jpeg" alt="Item 3">
+                    <h3>Піспенан коктейлі </h3>
+                    <p>Құны: 3590 ₸</p>
+                    <button onclick="addToBag('Піспенан коктейлі',  3590)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item kokteil">
+                    <img src="images/kokteil/klassykalyq.jpeg" alt="Item 4">
+                    <h3>Классикалық коктейлі </h3>
+                    <p>Құны: 3590 ₸</p>
+                    <button onclick="addToBag('Классикалық коктейлі',  3590)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+            </div>
+        </div> 
+    </section>  
+
+    <!-- Bag Section -->
+    <section id="bag" class="bag">
+        <h1>Сіздің тапсырысыңыз</h1>
+        <div class="bag-items">
+            <!-- мында тауарлар -->
+        </div>
+        <button onclick="redirectToCart()"><a href="cart.html" class="cart-link">ТАПСЫРЫСҚА ӨТУ</a></button>
+    </section>
+
+    <script src="drinks.js"></script>
+    <script src="cart.js" defer></script>
+</body>
+</html>

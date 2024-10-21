@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TARY</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styleLap.css">
+    <link rel="stylesheet" href="styleMob.css">
+
+</head>
+<body>
+    <!-- header -->
+    <header>
+
+        <div class="nav-container">
+
+            <a href="#home" class="logo">
+                <img src="images/tary logo.png" class="logo-img" style="height: 120px; width: 80px;">
+            </a>
+            <div class="nav-bar">
+                <a href="drinks.html" class="nav-link">ТАРЫ ТАҢДАУЫ</a>
+                <a href="#menu" class="nav-link">ТАПСЫРЫС БЕРУ</a>
+                <a href="#filial" class="nav-link">ФИЛИАЛДАР</a>
+                <a href="#masterclasses-container" class="nav-link">ҰСЫНЫСТАРЫМЫЗ</a>
+                <a href="#book" class="nav-link">БАЙЛАНЫС</a>
+            </div>
+            <!-- nav-icons -->
+            <div class="nav-icons">
+                <a href="#"><i class='bx bx-user'></i></a>
+                <a href="cart.html"><i class='bx bxs-shopping-bag' ></i></a>
+
+                
+                 <!--Nav Menu -->
+                  <div class="menu-icon">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                  </div>
+            </div>
+        </div>
+    </header>
+    <!--  home -->
+    <section class="home-container" id="home">
+        <div class="home-text">
+            <h1>
+                Qazaq Asynyn <br> ETNO-KOFESI 
+            </h1>
+            <p>
+                Татымды шәй ішуге тәулік бойы келе,<br>не тапсырыс бере аласыздар.
+            </p>
+            <a href="#menu" class="btn">
+                <span>Тапсырыс Беру</span>
+                <i class='bx bx-up-arrow-alt'></i>
+            </a>
+        </div>
+        <!--  Home Image-->
+          <div class="image-container"><img src="images/full_apa.png" alt="Tary apa" ></div>
+        
+    </section>
+    <!-- scroll string -->
+    <div class="marquee-container">
+        <div class="marquee"> •  TARY - Qazaq Asynyn ETNO-KOFESI  •  TARY - Qazaq Asynyn ETNO-KOFESI  •  TARY - Qazaq Asynyn ETNO-KOFESI  •  TARY - Qazaq Asynyn ETNO-KOFESI  •  TARY - Qazaq Asynyn ETNO-KOFESI  • TARY - Qazaq Asynyn ETNO-KOFESI  •  TARY - Qazaq Asynyn ETNO-KOFESI  •  TARY - Qazaq Asynyn ETNO-KOFESI  • TARY - Qazaq Asynyn ETNO-KOFESI  •  TARY - Qazaq Asynyn ETNO-KOFESI  •  TARY - Qazaq Asynyn ETNO-KOFESI  •  TARY - Qazaq Asynyn ETNO-KOFESI  •  TARY - Qazaq Asynyn ETNO-KOFESI  •  TARY - Qazaq Asynyn ETNO-KOFESI  •  TARY - Qazaq Asynyn ETNO-KOFESI  •  TARY - Qazaq Asynyn ETNO-KOFESI  •  TARY - Qazaq Asynyn ETNO-KOFESI  •  TARY - Qazaq Asynyn ETNO-KOFESI  •  TARY - Qazaq Asynyn ETNO-KOFESI  • TARY - Qazaq Asynyn ETNO-KOFESI  •  TARY - Qazaq Asynyn ETNO-KOFESI  •  TARY - Qazaq Asynyn ETNO-KOFESI  • TARY - Qazaq Asynyn ETNO-KOFESI  •  TARY - Qazaq Asynyn ETNO-KOFESI  •  TARY - Qazaq Asynyn ETNO-KOFESI  • </div>
+        <!--  -->
+    </div>
+    <!-- Services -->
+    <section class="services-container" id="services-container">
+        <div class="heading-ser">
+            <h1>
+                ТАРЫдан  Гастротур 
+            </h1>
+        </div>
+        <div class="service-content">
+            <div class="serv-box">
+                <img src="images/juice-icon-removebg-preview.png" alt="">
+                <p> <a href="drinks.html#juices">ШЫРЫНДАР</a></p>
+            </div>
+            <div class="serv-box">
+                <img src="images/coffee-icon-removebg-preview.png" alt="">
+                <p><a href="drinks.html#coffees">КОФЕЛЕР</a></p>
+            </div>
+            <div class="serv-box">
+                <img src="images/tea-icon-removebg-preview.png" alt="">
+                <p> <a href="drinks.html#teas">АВТОРЛЫҚ ШӘЙЛАР</a></p>
+            </div>
+            <div class="serv-box">
+                <img src="images/milkshake-icon-removebg-preview.png" alt="">
+                <p><a href="drinks.html#kokteil">СҮТТІ КОКТЕЙЛЬДЕР</a></p>
+            </div>
+        </div>
+    </section>
+    <!--divider -->
+    <div class="divider-container">
+        <div class="divider"></div>
+    </div>
+    <!-- Menu section -->
+    <section id="menu" class="menu-section">
+        <h2>МӘЗІР</h2>
+        <div class="menu-container" id="menu-container">
+            <div class="menu-categories">
+                <button onclick="filterMenu('breakfast')">ТАҢҒЫ АСТАР</button>
+                <button onclick="filterMenu('snacks')">ТІСКЕБАСАР</button>
+                <button onclick="filterMenu('soups')">СОРПАЛАР</button>
+                <button onclick="filterMenu('salads')">САЛАТТАР</button>
+                <button onclick="filterMenu('main-foods')">НЕГІЗГІ ТАҒАМДАР</button>
+                <button onclick="filterMenu('kids-foods')">БАЛАЛАР ТАҒАМДАРЫ</button>
+                <button onclick="filterMenu('pizza')">ПИЦЦА</button>
+                <button onclick="filterMenu('bakery')">ПІСІРІЛГЕН ТОҚАШТАР</button>
+                <button onclick="filterMenu('desserts')">ТӘТТІЛЕР</button>
+            </div>
+            
+        <!-- breakfast -->
+            <div class="menu-items">
+                <div class="menu-item breakfast">
+                    <img src="images/breakfast/botqa-bylamyq.jpeg" alt="Item 1">
+                    <h3>Ботқа Быламық</h3>
+                    <p>қуырылған талқан, сүт, бал, кілегей, еріген сары май, таңқурай джемі</p>
+                    <p>Құны: 1990 ₸</p>
+                    <button onclick="addToBag('Ботқа Быламық', 1990)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item breakfast">
+                    <img src="images/breakfast/botqa-kurish.jpeg" alt="Item 2">
+                    <h3>Ботқа Күріштен</h3>
+                    <p>күріш, сүт, еріген сары май, таңқурай джемі</p>
+                    <p>Құны: 1990 ₸</p>
+                    <button onclick="addToBag('Ботқа Күріштен', 1990)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item breakfast">
+                    <img src="images/breakfast/qurma-botga.jpeg" alt="Item 3">
+                    <h3>Құрма қосылған "Әлем ботқа"</h3>
+                    <p>Бидай,сүт, аджуа</p>
+                    <p>Құны: 2590 ₸</p>
+                    <button onclick="addToBag('Құрма қосылған `Әлем ботқа`',  2590)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item breakfast">
+                    <img src="images/breakfast/bal-botqa.jpeg" alt="Item 4">
+                    <h3>Бал қосылған "Әлем ботқа"</h3>
+                    <p>Бидай,сүт,бал</p>
+                    <p>Құны: 2590 ₸</p>
+                    <button onclick="addToBag('Бал қосылған `Әлем ботқа`',2590 )"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item breakfast">
+                    <img src="images/breakfast/untaq-botqa.jpeg" alt="Item 5">
+                    <h3>Ұнтақ ботқасы</h3>
+                    <p>ұнтақ жармасы , сүт , ерітілген сары май , таңқурай джемі</p>
+                    <p>Құны: 1990 ₸</p>
+                    <button onclick="addToBag('Ұнтақ ботқасы', 1990)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item breakfast">
+                    <img src="images/breakfast/tary-botqa.jpeg" alt="Item 6">
+                    <h3>Тары ботқасы</h3>
+                    <p>тары,сүт, еріген сары май, таңқурай джемі</p>
+                    <p>Құны: 2590 ₸</p>
+                    <button onclick="addToBag('Тары ботқасы',2590)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item breakfast">
+                    <img src="images/breakfast/sut-kespe.jpeg" alt="Item 7">
+                    <h3>Сүт кеспесі</h3>
+                    <p>үй кеспесі , сүт</p>
+                    <p>Құны:  1990 ₸</p>
+                    <button onclick="addToBag('Сүт кеспесі',  1990)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item breakfast">
+                    <img src="images/breakfast/pasot-jumyrtqa.jpeg" alt="Item 8">
+                    <h3>Кілегейлі тұздықты асжапырақ қосылған пашот жұмыртқа</h3>
+                    <p>асжапырақ,сары май, жұмыртқа , бриошь</p>
+                    <p>Құны: 2590 ₸</p>
+                    <button onclick="addToBag('Кілегейлі тұздықты асжапырақ қосылған пашот жұмыртқа',  2590)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item breakfast">
+                    <img src="images/breakfast/qurylgan-jumyrtqa.jpeg" alt="Item 9">
+                    <h3>Қуырылған жұмыртқа</h3>
+                    <p>салаттар миксі, жұмыртқа, кебек тосттары</p>
+                    <p>Құны: 1990 ₸</p>
+                    <button onclick="addToBag('Қуырылған жұмыртқа',  1990)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item breakfast">
+                    <img src="images/breakfast/omlet.jpeg" alt="Item 10">
+                    <h3>Көкөністер қосылған үй омлеті</h3>
+                    <p>сүт,жұмыртқа , көкөністер</p>
+                    <p>Құны:  2590 ₸</p>
+                    <button onclick="addToBag('Көкөністер қосылған үй омлеті',  2590)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item breakfast">
+                    <img src="images/breakfast/ui-iogurt.jpeg" alt="Item 11">
+                    <h3>Маусымдық жидектер қосылған үй йогурты</h3>
+                    <p>үйдегі сүзбе, кілегей , банан , жидектер</p>
+                    <p>Құны:  2590 ₸</p>
+                    <button onclick="addToBag('Маусымдық жидектер қосылған үй йогурты',  2590)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item breakfast">
+                    <img src="images/breakfast/maisok.jpeg" alt="Item 12">
+                    <h3>"Майсөк" мусспен</h3>
+                    <p>контейнелер , сары май , бал, мусс</p>
+                    <p>Құны:  2990 ₸</p>
+                    <button onclick="addToBag('`Майсөк` мусспен',  2990)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item breakfast">
+                    <img src="images/breakfast/quimaq.jpeg" alt="Item 13">
+                    <h3>Құймақ</h3>
+                    <p>сүт,жұмыртқа, ұн, бал,балқаймақ</p>
+                    <p>Құны:  1990 ₸</p>
+                    <button onclick="addToBag('Құймақ',  1990)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item breakfast">
+                    <img src="images/breakfast/suzbeli-quimaq.jpeg" alt="Item 14">
+                    <h3>Сүзбелі құймақ</h3>
+                    <p>үй сүзбе, жұмыртқа , ұнтақ жарма, таңқурай джемі</p>
+                    <p>Құны:  2590 ₸</p>
+                    <button onclick="addToBag('Сүзбелі  қаймақ',  2590)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item breakfast">
+                    <img src="images/breakfast/granola-suzbe1.jpeg" alt="Item 15">
+                    <h3>Өз тәсілімізбен дайындалған гранола қосылған сүзбе қоспасы</h3>
+                    <p>үй сүзбесі, кілегей , үй қаймағы , бал</p>
+                    <p>Құны:  2590 ₸</p>
+                    <button onclick="addToBag('Өз тәсілімізбен дайындалған гранола қосылған сүзбе қоспасы',  2590)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+            </div>
+    <!--snacks  -->
+            <div class="menu-items">
+                <div class="menu-item snacks">
+                    <img src="images/snacks/jylqy-pastet.jpeg" alt="Item 1">
+                    <h3>Жылқы етінен жасалған паштет</h3>
+                    <p>кілегей, қазы, қарақұмық наны</p>
+                    <p>Құны: 2990 ₸</p>
+                    <button onclick="addToBag('Жылқы етінен жасалған паштет', 2990)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item snacks">
+                    <img src="images/snacks/mi-palau.jpeg" alt="Item 2">
+                    <h3>"Ми палау"</h3>
+                    <p>піскен қамырдағы сиыр миы, жая, кілегей және дәмдеуіштер</p>
+                    <p>Құны: 3590 ₸</p>
+                    <button onclick="addToBag('Ми палау', 3590)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item snacks">
+                    <img src="images/snacks/qazy-tabaq.jpeg" alt="Item 3">
+                    <h3>"Қазы" қосылған бар көкөніс табақшасы</h3>
+                    <p>қазы, монгольд,черри, кептірілген қызанақ, анар дәндері , тары</p>
+                    <p>Құны: 3590 ₸</p>
+                    <button onclick="addToBag('`Қазы` қосылған бар көкөніс табақшасы',  3590)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+            </div>
+     <!--soups  -->
+            <div class="menu-items">
+                <div class="menu-item soups">
+                    <img src="images/soups/irimsik-sorpa.jpeg" alt="Item 1">
+                    <h3>Ірімшік сорпасы</h3>
+                    <p>чеддер ірімшігі , сәбіз, пияз , картоп, еріген ірімшік , кілегей, қытырлақ нан</p>
+                    <p>Құны: 2590 ₸</p>
+                    <button onclick="addToBag('Ірімшік сорпасы', 2590)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item soups">
+                    <img src="images/soups/ui-kespe.jpeg" alt="Item 2">
+                    <h3>Үй кеспесі</h3>
+                    <p>тауық еті , үй кеспесі , сәбіз , пияз,қытырлақ нан</p>
+                    <p>Құны: 2590 ₸</p>
+                    <button onclick="addToBag('Үй кеспесі', 2590)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item soups">
+                    <img src="images/soups/julqy-sopra.jpeg" alt="Item 3">
+                    <h3>Жылқы етінен "Ақ сорпа"</h3>
+                    <p>жылқы еті, жүгері, айран , қызанақ</p>
+                    <p>Құны: 2990 ₸</p>
+                    <button onclick="addToBag('Жылқы етінен `Ақ сорпа`',  2990)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item soups">
+                    <img src="images/soups/asqabaq-sorpa.jpeg" alt="Item 4">
+                    <h3>Асқабақ көжесі</h3>
+                    <p>асқабақ кілегей , бал, қытырлақ нан</p>
+                    <p>Құны: 1990 ₸</p>
+                    <button onclick="addToBag('Асқабақ көжесі',  1990)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item soups">
+                    <img src="images/soups/qyzanaq-sorpa.jpeg" alt="Item 5">
+                    <h3>Страчателла қосылған қызанақ сорпасы</h3>
+                    <p>жас қызанақ (пелати),қызыл болгар бұрышы , страчателла ,қытырлақ нан</p>
+                    <p>Құны: 2590 ₸</p>
+                    <button onclick="addToBag('Страчателла қосылған қызанақ сорпасы',  2590)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+            </div>
+        <!-- salads -->
+            <div class="menu-items">
+                <div class="menu-item salads">
+                    <img src="images/salads/myjyma-salad.jpeg" alt="Item 1">
+                    <h3>"Мыжыма" нан қосылған фермер салаты</h3>
+                    <p>салат миксі, черри,қияр, балыша қатығы</p>
+                    <p>Құны: 2590 ₸</p>
+                    <button onclick="addToBag('`Мыжыма` нан қосылған фермер салаты', 2590)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item salads">
+                    <img src="images/salads/balgyn-salad.jpeg" alt="Item 2">
+                    <h3>Балғын көкөністен жасалған салат</h3>
+                    <p>салаттар миксі, черри, қияр, тәтті бұрыш, анар дәндері, зәйтүн майы</p>
+                    <p>Құны: 2590 ₸</p>
+                    <button onclick="addToBag('Балғын көкөністен жасалған салат', 2590)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item salads">
+                    <img src="images/salads/jailau-salad.jpeg" alt="Item 3">
+                    <h3>"Жайлау' салаты </h3>
+                    <p>апельсин , салат миксі, сиыр еті тілігі, грек жаңғағы , цитрусдық дәмдеуіш</p>
+                    <p>Құны: 3590 ₸</p>
+                    <button onclick="addToBag('`Жайлау`салаты',  3590)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+            </div>
+        <!-- main-foods -->
+            <div class="menu-items">
+                <div class="menu-item main-foods">
+                    <img src="images/main-food/qazan-jappa.jpeg" alt="Item 1">
+                    <h3>"Қазан жаппа"</h3>
+                    <p> жая , бұрыш, черри, шелпек</p>
+                    <p>Құны: 5990 ₸</p>
+                    <button onclick="addToBag('Қазан жаппа', 5990)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item main-foods">
+                    <img src="images/main-food/balgyn-quyrdaq.jpeg" alt="Item 2">
+                    <h3>Үйде өсірілген картоп қосылған "Балғын қуырдақ"</h3>
+                    <p>жая, пияз, қаймақ, бидай наны</p>
+                    <p>Құны: 5990 ₸</p>
+                    <button onclick="addToBag('Үйде өсірілген картоп қосылған `Балғын қуырдақ`', 5990)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item main-foods">
+                    <img src="images/main-food/bulgyr-tauyq.jpeg" alt="Item 3">
+                    <h3>Булгур қосылған тауық сирағы </h3>
+                    <p>тауық сирағы , булгур , фирмалық тұздық</p>
+                    <p>Құны: 3590 ₸</p>
+                    <button onclick="addToBag('Булгур қосылған тауық сирағы',  3590)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item main-foods">
+                    <img src="images/main-food/burys-jylqy.jpeg" alt="Item 4">
+                    <h3>Бұрыш тұздығындағы жылқы еті</h3>
+                    <p>жылқы еті , үй сары май , черри, бидай,бұрыш , тұздығы</p>
+                    <p>Құны: 4990 ₸</p>
+                    <button onclick="addToBag('Бұрыш тұздығындағы жылқы еті',  4990)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item main-foods">
+                    <img src="images/main-food/kraft-burger.jpeg" alt="Item 5">
+                    <h3>Крафт бургер сиыр</h3>
+                    <p>пісірілген сиыр еті , піскен шие , карамельденген пияз, чеддер ірімшігі , соус</p>
+                    <p>Құны: 4990 ₸</p>
+                    <button onclick="addToBag('Крафт бургер сиыр',  4990)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item main-foods">
+                    <img src="images/main-food/kraft-burder2.jpeg" alt="Item 6">
+                    <h3>Крафт бургер жылқы</h3>
+                    <p>пісірілген жылқы еті, карамельденген пияз, чеддер ірімшігі , соус</p>
+                    <p>Құны: 4590 ₸</p>
+                    <button onclick="addToBag('Крафт бургер жылқы',  4590)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+            </div>
+            <!-- kids-foods -->
+            <div class="menu-items">
+                <div class="menu-item kids-foods">
+                    <img src="images/kids-foods/tauyq-puire.jpeg" alt="Item 1">
+                    <h3>Тауық етінен үй тәсілімен әзірленген котлеттер , картоп пюресімен</h3>
+                    <p>Құны: 2990 ₸</p>
+                    <button onclick="addToBag('Тауық етінен үй тәсілімен әзірленген котлеттер , картоп пюресімен', 2990)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item kids-foods">
+                    <img src="images/kids-foods/buzau-puire.jpeg" alt="Item 2">
+                    <h3>Бұзау етінен үй тәсілімен әзірленген котлеттер , картоп пюресімен</h3>
+                    <p>Құны: 2990 ₸</p>
+                    <button onclick="addToBag('Бұзау етінен үй тәсілімен әзірленген котлеттер , картоп пюресімен', 2990)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item kids-foods">
+                    <img src="images/kids-foods/kartop-sarlary.jpeg" alt="Item 3">
+                    <h3>Картоп шарлары </h3>
+                    <p>картоп шарлары, үй қаймағы</p>
+                    <p>Құны: 2590 ₸</p>
+                    <button onclick="addToBag('Картоп шарлары',  2590)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+            </div>
+            <!-- pizza -->
+            <div class="menu-items">
+                <div class="menu-item pizza">
+                    <img src="images/pizza/margarita.jpeg" alt="Item 1">
+                    <h3>Маргарита</h3>
+                    <p>Құны: 3590 ₸</p>
+                    <button onclick="addToBag('Маргарита', 3590)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item pizza">
+                    <img src="images/pizza/stratcatella-pizza.jpeg" alt="Item 2">
+                    <h3>Страчателла қосылған пицца</h3>
+                    <p>Құны: 3990 ₸</p>
+                    <button onclick="addToBag('Страчателла қосылған пицца', 3990)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item pizza">
+                    <img src="images/pizza/jylqy-pizza.jpeg" alt="Item 3">
+                    <h3>Шырынды жылқы еті қосылған пицца</h3>
+                    <p>Құны: 4990 ₸</p>
+                    <button onclick="addToBag('Шырынды жылқы еті қосылған пицца',  4990)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item pizza">
+                    <img src="images/pizza/patir-nan.jpeg" alt="Item 4">
+                    <h3>Ірімшік қосылған "Пәтір нан"</h3>
+                    <p>Құны: 2590 ₸</p>
+                    <button onclick="addToBag('Пәтір нан',  2590)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+            </div>
+            <!-- bakery -->
+            <div class="menu-items">
+                <div class="menu-item bakery">
+                    <img src="images/bakery/nan-sebet.jpeg" alt="Item 1">
+                    <h3>Нан салынған себет</h3>
+                    <p>тары,қара бидай, бидай</p>
+                    <p>Құны: 1590 ₸</p>
+                    <button onclick="addToBag('Нан салынған себет', 1590)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item bakery">
+                    <img src="images/bakery/nan-irimsik.jpeg" alt="Item 2">
+                    <h3>Жұқпа нан ірімшік және қаймақ соус</h3>
+                    <p>Құны: 990 ₸</p>
+                    <button onclick="addToBag('Жұқпа нан ірімшік және қаймақ', 990)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item bakery">
+                    <img src="images/bakery/irimsik-bauyrsaq.jpeg" alt="Item 3">
+                    <h3>Ірімшік қосылған бауырсақ</h3>
+                    <p>Құны: 1590 ₸</p>
+                    <button onclick="addToBag('Ірімшік қосылған бауырсақ',  1590)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item bakery">
+                    <img src="images/bakery/bauyrsaq- balqaimaq.jpeg" alt="Item 4">
+                    <h3>Бауырсақ балқаймақпен</h3>
+                    <p>Құны: 1590 ₸</p>
+                    <button onclick="addToBag('Бауырсақ балқаймақпен',  1590)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item bakery">
+                    <img src="images/bakery/qattama.jpeg" alt="Item 5">
+                    <h3>Қаттама</h3>
+                    <p>ірімшік қосылған қатпарлы қамыр</p>
+                    <p>Құны: 1990 ₸</p>
+                    <button onclick="addToBag('Қаттама',  1990)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item bakery">
+                    <img src="images/bakery/baramis-siyr.jpeg" alt="Item 6">
+                    <h3>"Бәрәміш" сиыр етімен</h3>
+                    <p>Құны: 2590 ₸</p>
+                    <button onclick="addToBag('`Бәрміш` сиыр етімен',  2590)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item bakery">
+                    <img src="images/bakery/baramis-tauyq.jpeg" alt="Item 7">
+                    <h3>"Бәрәміш" тауық етімен</h3>
+                    <p>Құны: 1990 ₸</p>
+                    <button onclick="addToBag('`Бәрміш` тауық етімен', 1990)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+            </div>
+            <!-- desserts -->
+            <div class="menu-items">
+                <div class="menu-item desserts">
+                    <img src="images/desserts/cizkeik-tarymen.jpeg" alt="Item 1">
+                    <h3>Чизкейк</h3>
+                    <p>Құны: 2990 ₸</p>
+                    <button onclick="addToBag('Чизкейк', 2990)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item desserts">
+                    <img src="images/desserts/tary-tattileri.jpeg" alt="Item 2">
+                    <h3>Тары тәттілері</h3>
+                    <p>Құны: 3990 ₸</p>
+                    <button onclick="addToBag('Тары тәттілері', 3990)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item desserts">
+                    <img src="images/desserts/tiramisu.jpeg" alt="Item 3">
+                    <h3>Тирамису</h3>
+                    <p>Құны: 2590 ₸</p>
+                    <button onclick="addToBag('Тирамису', 2590)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item desserts">
+                    <img src="images/desserts/jangaaq-brauni.jpeg" alt="Item 4">
+                    <h3>Жер жаңғақ қосылған брауни</h3>
+                    <p>Құны: 2590 ₸</p>
+                    <button onclick="addToBag('Жер жаңғақ қосылған брауни',2590 )"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item desserts">
+                    <img src="images/desserts/tary-ekler.jpeg" alt="Item 5">
+                    <h3>Тары қосылған эклер</h3>
+                    <p>Құны: 1990 ₸</p>
+                    <button onclick="addToBag('Тары қосылған эклер', 1990)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item desserts">
+                    <img src="images/desserts/balmeken-topt.jpeg" alt="Item 6">
+                    <h3>"Балмекен" торты</h3>
+                    <p>Құны: 2590 ₸</p>
+                    <button onclick="addToBag('`Балмекен` торты',2590)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item desserts">
+                    <img src="images/desserts/vafli.jpeg" alt="Item 7">
+                    <h3>Үйдің вафлиі</h3>
+                    <p>Құны: 1590 ₸</p>
+                    <button onclick="addToBag('Үйдің вафлиі',  1590)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item desserts">
+                    <img src="images/desserts/anar.jpeg" alt="Item 8">
+                    <h3>Анар дәндері</h3>
+                    <p>Құны: 1590 ₸</p>
+                    <button onclick="addToBag('Анар дәндері',  1590)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item desserts">
+                    <img src="images/desserts/tary-balmuzdaq.jpeg" alt="Item 9">
+                    <h3>Тары қосылған балмұздақ</h3>
+                    <p>Құны: 2990 ₸</p>
+                    <button onclick="addToBag('Тары қосылған балмұздақ', 2990)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item desserts">
+                    <img src="images/desserts/vanil-balmuzdaq.jpeg" alt="Item 10">
+                    <h3>Ванильді балмұздақ</h3>
+                    <p>Құны: 2590 ₸</p>
+                    <button onclick="addToBag('Ванильді балмұздақ',  2590)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item desserts">
+                    <img src="images/desserts/sorbet-qulpynai.jpeg" alt="Item 11">
+                    <h3>"Сорбет" жеміс-жидек құлпынай</h3>
+                    <p>Құны:  2590 ₸</p>
+                    <button onclick="addToBag('`Сорбет` жеміс-жидек құлпынай',  2590)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+                <div class="menu-item desserts">
+                    <img src="images/desserts/limon-ejigei-biskviti.jpeg" alt="Item 12">
+                    <h3>Лимон джемі мен ежігей қосылған бисквиті</h3>
+                    <p>Құны:  1990 ₸</p>
+                    <button onclick="addToBag('Лимон джемі мен ежігей қосылған бисквиті',  1990)"><i class='bx bx-shopping-bag'></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Bag Section -->
+    <section id="bag" class="bag">
+        <h1>Сіздің тапсырысыңыз</h1>
+        <div class="bag-items">
+            <!-- мында тауалар -->
+        </div>
+        <button onclick="redirectToCart()"><a href="cart.html" class="cart-link">ТАПСЫРЫСҚА ӨТУ</a></button>
+    </section>
+
+    <!-- filial -->
+    <section class="filial-container" id="filial">
+        <div class="heading-filial">
+            <h1 >ФИЛИАЛДАРЫМЫЗ</h1>
+        </div>
+        <div class="filial-content">
+            <div class="filial-box">
+                <img src="images/filial/sharyn.png" alt="">
+               
+                <ul>
+                    <h2>TARY CHARYN </h2>
+                    <li>
+                        Шарын каньоны –
+                        бұл таңғажайып ландшафт, 
+                        Шарын өзенінің бойындағы 154 км каньон табиғат ескерткіші
+                   </li>
+                   <li>
+                    Сапар орталығы, Садыр Палван көшесі,1 А/1, Шарын ауылы
+                   </li>
+                   <li>
+                    Кофехана залында 70 отыратын орындар,
+                    Террассадағы 105 отыратын орындар
+                   </li>
+                   <button>
+                       <a href="#book">ТОЛЫҒЫРАҚ</a>
+                    </button>
+                </ul>
+               
+            </div>
+            <div class="filial-box">
+                <img src="images/filial/ayusai.png" alt="">
+                
+                <ul>
+                    <h2>TARY AYUSAI </h2>
+                    <li>
+                        «Аюсай» Шатқалы - табиғатқа нағыз бөлшегі
+                    </li>
+                    <li>
+                        Сапар орталығы, Көкшоқы шағынауданы, 1а, Алматы
+                    </li>
+                    <li>
+                        170 отыратын орындар
+                    </li>
+                    <button>
+                        <a href="#book">ТОЛЫҒЫРАҚ</a>
+                    </button>
+                </ul>
+               
+            </div>
+            <div class="filial-box">
+                <img src="images/filial/turgen.png" alt="">
+                
+                <ul>
+                    <h2>TARY TURGEN </h2>
+                    <li>
+                        Сарқырамаларға, бұлақтар мен ормандарға бай Түрген шатқалы
+                    </li>
+                    <li>
+                        Келу орталығы, Түрген шатқалы, 15, Алматы облысы
+                    </li>
+                    <li>
+                        50 отыратын орындар
+                    </li>
+                    <button>
+                        <a href="#book">ТОЛЫҒЫРАҚ</a>
+                    </button>
+                </ul>
+                
+            </div>
+            <div class="filial-box">
+                <img src="images/filial/altynemel.png" alt="">
+                
+                <ul>
+                    <h2>TARY ALTYN EMEL </h2>
+                    <li>
+                        Бұл шексіз құм төбелері, жартасты жартастар мен көркем көлдер кездесетін ерекше орын
+                    </li>
+                    <li>
+                        Сапар орталығы, Алматы-Өскемен трассасы, 1/6а,Кербұлақ ауданы, Алматы облысы
+                    </li>
+                    <li>
+                       40 отыратын орындар
+                    </li>
+                    <button>
+                        <a href="#book">ТОЛЫҒЫРАҚ</a>
+                    </button>
+                </ul>
+
+            </div>
+        </div>
+    </section>
+    <!-- masterclasses -->
+    <section class="masterclasses-container" id="masterclasses-container">
+        <div class="masterclasses">
+            <h1>Мастер-класстар</h1>
+            <p>TARY кофеханасының шығармашылық әлеміне еніп, бірегей гастрономиялық <br>шеберханаларын тамашалаңыз</p>
+
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <h2>Қыш және киіз өнері</h2>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>
+                            Дәстүрлі қолөнер шеберханасында сіз қыш және киіз өнерін игере аласыз. Тәжірибелі шеберлердің басшылығымен
+                            <ul>
+                                <li>Сіз бірегей саздан жасалған бұйымдар жасайсыз және талғампаз киізден жасалған бұйымдар жасайсыз.</li>
+                                <li>Ескі техниканы ашыңыз және өз идеяларыңызды бірегей өнер туындыларына айналдырыңыз.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <h2>Жаңа піскен нанның құпиялары</h2>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>
+                            "Ас атасы-нан" Нан бойынша шеберлік сыныбына қатысыңыз.
+                            <ul>
+                               <li>Нан дайындаудың дәстүрлі қазақ рецептерін оқып, оны үйде пісіруді үйреніңіз.</li> 
+                                <li>Дәстүрлі қазақ нан пісірудің құпияларын ашып, жаңа піскен нанның хош иісі мен дәмінен ләззат алыңыз.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <h2>Шоколад және бауырсақ шеберханасы</h2>
+                        <span class="accordion-icon">-</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>
+                            Шоколад және бауырсақ шеберханасында сіз шоколад кәмпиттері мен дәстүрлі қазақ бауырсақ жасау өнері туралы білесіз. Мамандардың басшылығымен.
+                            <ul>
+                                <li>Сіз бірегей шоколад композицияларын жасауды және дәстүрлі тәттілерді шебер пісіруді үйренесіз.</li>
+                                <li>Кәсіби кондитерлердің құпияларын ашып өзіңізді және жақындарыңызды дәмді тағамдармен қуантыңыз.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <h2>Тара және талқан дайындау</h2>
+                        <span class="accordion-icon">-</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>
+                        "Тара және талқан дайындау" аспаздық шеберлік сабағында сіз қазақтың дәстүрлі тағамдарымен танысып, оларды тәжірибелі аспаздардың көмегімен дайындауды үйренесіз.
+                            <ul>
+                                <li>Қазақтың шынайы және дәмді тағамдарын жасау үшін бірегей дәмдеуіштер мен пісіру әдістерін ашыңыз.</li>
+                                <li>Өзіңіздің аспаздық құмарлығыңызды қанағаттандырыңыз және өзіңізді және жақындарыңызды дәмді тағамдармен қуантыңыз.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- book -->
+    <section class="book-container" id="book">
+        <div class="booking-section">
+            <h1>Ұмытылмас демалыс немесе табиғатта банкет өткізгіңіз келе ме?</h1>
+            <p>Өтінімді қалдырыңыз және біздің менеджерлер сізбен 30 минут ішінде хабарласады.
+                </p>
+            <form id="bookingForm" onsubmit="validateForm(event)">
+                <label for="name">Есіміңіз:</label>
+                <input type="text" id="name" class="input-box" name="name" required>
+                <span class="error-message" id="nameError">Міндетті тізім</span>
+    
+                <label for="phone">Сіздің Whatsapp-пен ұялы телефон номеріңіз</label>
+                <input type="tel" id="phone" class="input-box" name="phone" pattern="\+?[0-9\s\-\(\)]+"
+                       placeholder="+7 (999) 999-99-99" required>
+                <span class="error-message" id="phoneError">Міндетті тізім</span>
+    
+                <label for="date">Күнді енгізіңіз</label>
+                <input type="date" id="date" class="input-box" name="date" required>
+                <span class="error-message" id="dateError">Барлық тізімдерді міндетті түрде толтырыңыз</span>
+    
+                <label for="persons">Адамдар саны</label>
+                <input type="range" class="input-box" id="persons" name="persons" min="10" max="250" value="130" oninput="updatePersonsValue(this.value)">
+                <span id="personsValue">130</span>
+    
+                <label for="eventFormat">Тізімнен іс-шара форматын таңдаңыз</label>
+                <select id="eventFormat" name="eventFormat" required>
+                    <option value="">Іс-шара форматтары</option>
+                    <option value="banquet">Кофе Брэйк</option>
+                    <option value="conference">Түскі ас</option>
+                    <option value="party">Кешкі ас</option>
+                    <option value="party">Банкет</option>
+                    <option value="party">Барлық мүмкіншіл іс-шаралар </option>
+                </select>
+                <span class="error-message" id="eventFormatError">Барлық тізімдерді міндетті түрде толтырыңыз</span>
+                <button class="book-btn" type="submit">Жіберу</button>
+            </form>
+        </div>
+    </section>
+
+<!-- footer -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="images/tary logo.png" alt="TARY Coffee ">
+        </div>
+        <div class="footer-links">
+            <div class="footer-column">
+                <h4>Туралы</h4>
+                <ul>
+                    <li><a href="#filial"> Біздің TARY</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Тапсырыс Берушінің Ресурстары</h4>
+                <ul>
+                    <li><a href="#menu">Мәзір</a></li>
+                    <li><a href="filial">Орналасуы</a></li>
+                    <li><a href="mailto:a.alimbet@aknietgroup.email">Қолдау</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Қызметтер</h4>
+                <ul>
+                    <li><a href="cart.html">Төлем Опциялары</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.instagram.com/tary.coffee?igsh=MWhobm05NWgydm5rOA=="><i class='bx bxl-instagram' ></i></a>    
+            <a href="mailto:a.alimbet@aknietgroup.email"><i class='bx bx-envelope'></i></a> 
+            <a href="tel:+77087414472"><i class='bx bx-phone'></i></a>  
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 TARY Coffee. Барлық құқықтар қорғалған.</p>
+    </div>
+</footer>
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+    <script src="cart.js" defer></script>
+</body>
+</html>
